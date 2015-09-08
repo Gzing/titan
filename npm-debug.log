@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.25
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/gagan/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/gagan/.npm/titan/1.0.0/package.tgz', '.' ]
+11 verbose tarball /home/gagan/.npm/titan/1.0.0/package.tgz
+12 verbose folder .
+13 info prepublish titan@1.0.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/gagan/.npm/1f1177db-tar.lock
+16 silly lockFile cf4c1c53-agan-npm-titan-1-0-0-package-tgz tar:///home/gagan/.npm/titan/1.0.0/package.tgz
+17 verbose lock tar:///home/gagan/.npm/titan/1.0.0/package.tgz /home/gagan/.npm/cf4c1c53-agan-npm-titan-1-0-0-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile cf4c1c53-agan-npm-titan-1-0-0-package-tgz tar:///home/gagan/.npm/titan/1.0.0/package.tgz
+21 silly lockFile cf4c1c53-agan-npm-titan-1-0-0-package-tgz tar:///home/gagan/.npm/titan/1.0.0/package.tgz
+22 silly lockFile 0e73a78f-me-gagan-npm-titan-1-0-0-package /home/gagan/.npm/titan/1.0.0/package
+23 verbose lock /home/gagan/.npm/titan/1.0.0/package /home/gagan/.npm/0e73a78f-me-gagan-npm-titan-1-0-0-package.lock
+24 silly lockFile 0e73a78f-me-gagan-npm-titan-1-0-0-package /home/gagan/.npm/titan/1.0.0/package
+25 silly lockFile 0e73a78f-me-gagan-npm-titan-1-0-0-package /home/gagan/.npm/titan/1.0.0/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'titan',
+28 silly publish   version: '1.0.0',
+28 silly publish   description: '',
+28 silly publish   main: 'index.js',
+28 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+28 silly publish   repository: { type: 'git', url: 'git+https://github.com/Gzing/titan.git' },
+28 silly publish   author: '',
+28 silly publish   license: 'ISC',
+28 silly publish   bugs: { url: 'https://github.com/Gzing/titan/issues' },
+28 silly publish   homepage: 'https://github.com/Gzing/titan#readme',
+28 silly publish   readme: '# titan\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: 'a2993c90da4f2ec193ac8856aa430fc1b9debfa5',
+28 silly publish   _id: 'titan@1.0.0',
+28 silly publish   _shasum: '4e6574194b7133d0a213c02e4731bac10d5584a8',
+28 silly publish   _from: '.' }
+29 verbose request where is /titan
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 5bcdb3a221e3d01b
+32 verbose url raw /titan
+33 verbose url resolving [ 'https://registry.npmjs.org/', './titan' ]
+34 verbose url resolved https://registry.npmjs.org/titan
+35 verbose request where is https://registry.npmjs.org/titan
+36 info trying registry request attempt 1 at 14:36:40
+37 http PUT https://registry.npmjs.org/titan
+38 http 500 https://registry.npmjs.org/titan
+39 info retry will retry, error on last attempt: Error: unexpected status code: 401 : titan
+40 info trying registry request attempt 2 at 14:36:51
+41 http PUT https://registry.npmjs.org/titan
+42 http 500 https://registry.npmjs.org/titan
+43 info retry will retry, error on last attempt: Error: unexpected status code: 401 : titan
+44 info trying registry request attempt 3 at 14:37:53
+45 http PUT https://registry.npmjs.org/titan
+46 http 500 https://registry.npmjs.org/titan
+47 verbose headers { 'content-type': 'application/json',
+47 verbose headers   'cache-control': 'max-age=0',
+47 verbose headers   'content-length': '39',
+47 verbose headers   'accept-ranges': 'bytes',
+47 verbose headers   date: 'Tue, 08 Sep 2015 09:07:55 GMT',
+47 verbose headers   via: '1.1 varnish',
+47 verbose headers   connection: 'keep-alive',
+47 verbose headers   'x-served-by': 'cache-sin6922-SIN',
+47 verbose headers   'x-cache': 'MISS',
+47 verbose headers   'x-cache-hits': '0',
+47 verbose headers   'x-timer': 'S1441703274.471366,VS0,VE818' }
+48 error publish Failed PUT 500
+49 error Error: unexpected status code: 401 : titan
+49 error     at RegClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:300:14)
+49 error     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:238:65)
+49 error     at Request.self.callback (/usr/lib/nodejs/request/index.js:148:22)
+49 error     at Request.EventEmitter.emit (events.js:98:17)
+49 error     at Request.<anonymous> (/usr/lib/nodejs/request/index.js:896:14)
+49 error     at Request.EventEmitter.emit (events.js:117:20)
+49 error     at IncomingMessage.<anonymous> (/usr/lib/nodejs/request/index.js:847:12)
+49 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+49 error     at _stream_readable.js:920:16
+49 error     at process._tickCallback (node.js:415:13)
+50 error If you need help, you may report this *entire* log,
+50 error including the npm and node versions, at:
+50 error     <http://github.com/npm/npm/issues>
+51 error System Linux 3.19.0-15-generic
+52 error command "/usr/bin/nodejs" "/usr/bin/npm" "publish"
+53 error cwd /home/gagan/Documents/titan
+54 error node -v v0.10.25
+55 error npm -v 1.4.21
+56 verbose exit [ 1, true ]
